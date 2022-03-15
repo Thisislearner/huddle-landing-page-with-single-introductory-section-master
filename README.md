@@ -26,8 +26,8 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/thisislearner/huddle-landing-page-with-single-introductory-section-master)
-- Live Site URL: [Add live site URL here](https://thisislearner.github.io/huddle-landing-page-with-single-introductory-section-master/)
+- Solution URL: [solution URL to git repo](https://github.com/thisislearner/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [site URL for githubwebsite](https://thisislearner.github.io/huddle-landing-page-with-single-introductory-section-master/)
 - figma look on hover: [Figma hover png](./figma_designs/png/huddle_design_with_hover_effect.png)
 - figma design png normal : [figma normal](./figma_designs/png/screen_1400_normal.png)
 - figma design normal svg: [figma svg normal](./figma_designs/svg/screen_1400_normal.svg)
