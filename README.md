@@ -12,13 +12,11 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-1. This is huddle page frontendmentor challange solution by [Thisislearner][https://github.com/thisislearner/huddle-landing-page-with-single-introductory-section-master].
+1. This is huddle page frontendmentor challange solution by [Thisislearner](https://github.com/thisislearner/huddle-landing-page-with-single-introductory-section-master).
 2. this solution include some animation, some psuedo elements and some animation.
 3. Some changes are made to the stock background images provided by frontendmentor.
 
@@ -28,73 +26,76 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/thisislearner/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [Add live site URL here](https://thisislearner.github.io/huddle-landing-page-with-single-introductory-section-master/)
+- figma look on hover: [Figma hover png](./figma_designs/png/huddle_design_with_hover_effect.png)
+- figma design png normal : [figma normal](./figma_designs/png/screen_1400_normal.png)
+- figma design normal svg: [figma svg normal](./figma_designs/svg/screen_1400_normal.svg)
+- figma svg design with active buttons [figma svg](/figma_designs/svg/huddle_design_with_hover_effect.svg)
 
 ## My process
+
+1. designed it on figma as per my laptop screen.
+2. took measurements from figma created html.
+3. added css.
+4. added animation.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- I leart basic animation.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@keyframes headingTxtAnimation {
+  0% {
+    transform: translateX(-8rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-4rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+- how to used pseudo elements.
+
+```css
+.register::after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5rem;
+  outline: none;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  transition: all 200ms linear;
+}
+
+.register:hover::after {
+  transform: scale(1.6);
+  opacity: 0;
+}
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+## continued-development
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I will added responsiveness in this page.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Thisislearner](https://www.frontendmentor.io/profile/Thisislearner)
+- Twitter - [@abhi92039385](https://twitter.com/abhi92039385)
