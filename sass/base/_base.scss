@@ -5,16 +5,3 @@
 html {
   font-size: 62.5%;
 }
-
-body {
-  background-image: url("../images/bg-desktop.svg"),
-    linear-gradient(hsl(257, 40%, 49%), hsl(257, 40%, 52%));
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 97.6vh;
-  padding: 5rem;
-  box-sizing: border-box;
-}

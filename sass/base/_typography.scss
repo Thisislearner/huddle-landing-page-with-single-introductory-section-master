@@ -1,0 +1,70 @@
+body {
+  background-image: url("../images/bg-desktop.svg"),
+    linear-gradient(hsl(257, 40%, 49%), hsl(257, 40%, 52%));
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 97.6vh;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainImgDiv {
+  margin-top: 4.5rem;
+}
+
+.mainImg {
+  width: 65rem;
+}
+
+.headingTxt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: #fff;
+  width: 49rem;
+  // animation: @include paraMovementAnimation(-8rem, -4rem) 300ms linear 100ms;
+  animation-fill-mode: backwards;
+}
+
+.textBox {
+  margin-top: 4.5rem;
+}
+
+.para {
+  color: #fff;
+  font-size: 1.8rem;
+  width: 52rem;
+  font-family: "Roboto", sans-serif;
+  animation: paraAnimation 300ms linear 400ms;
+  animation-fill-mode: backwards;
+}
+
+.communicationSection {
+  display: flex;
+  justify-content: end;
+}
+a {
+  margin: 0 1rem;
+}
+
+a > img {
+  width: 3rem;
+}
+
+.communicationSection > a:last-child {
+  margin-right: 10%;
+}
+
+footer {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
