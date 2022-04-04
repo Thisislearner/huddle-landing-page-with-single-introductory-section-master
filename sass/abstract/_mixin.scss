@@ -1,0 +1,16 @@
+@mixin paraAnimations($dOne, $dTwo) {
+  @keyframes paraAnimation {
+    0% {
+      transform: translateX($dOne);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX($dTwo);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
