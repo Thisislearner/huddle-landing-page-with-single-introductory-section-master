@@ -1,13 +1,13 @@
 /* font-family: 'Rancho', cursive; ===>poppies 400, 600 for heading & body*/
 /* font-family: 'Roboto', sans-serif;   ===>poppies 400, 600 for heading & body*/
-@import url("./abstract/_mixin.scss");
-@import url("./abstract/_variables.scss");
-@import url("./base/_animation.scss");
+@import "./abstract/mixin";
+@import "./abstract/variables";
 
-.logo {
-  margin-left: 4%;
-  width: 17rem;
-}
+@import "./base/animation";
+@import "./base/base";
+
+@import "./components/button";
+@import "./components/logo";
 
 .mainContainer {
   display: flex;
