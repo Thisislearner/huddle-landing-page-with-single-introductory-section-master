@@ -1,8 +1,33 @@
 /* font-family: 'Rancho', cursive; ===>poppies 400, 600 for heading & body*/
 /* font-family: 'Roboto', sans-serif;   ===>poppies 400, 600 for heading & body*/
-@import url("./abstract/_mixin.scss");
-@import url("./abstract/_variables.scss");
-@import url("./animation/_animation.scss");
+@keyframes paraAnimation {
+  0% {
+    transform: translateX(8rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(4rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes btnAnimation {
+  0% {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(4rem);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: inherit;
 }
@@ -23,60 +48,6 @@ body {
   box-sizing: border-box;
 }
 
-.logo {
-  margin-left: 4%;
-  width: 17rem;
-}
-
-.mainContainer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.mainImgDiv {
-  margin-top: 4.5rem;
-}
-
-.mainImg {
-  width: 65rem;
-}
-
-.headingTxt {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 4.5rem;
-  color: #fff;
-  width: 49rem;
-  animation-fill-mode: backwards;
-}
-
-.textBox {
-  margin-top: 4.5rem;
-}
-
-.para {
-  color: #fff;
-  font-size: 1.8rem;
-  width: 52rem;
-  font-family: "Roboto", sans-serif;
-  animation: paraAnimation 300ms linear 400ms;
-  animation-fill-mode: backwards;
-}
-
-@keyframes paraAnimation {
-  0% {
-    transform: translateX(8rem);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(4rem);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .register {
   width: 14rem;
   font-size: 2rem;
@@ -124,20 +95,46 @@ body {
   opacity: 0;
 }
 
-@keyframes btnAnimation {
-  0% {
-    transform: translateY(8rem);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(4rem);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.logo {
+  margin-left: 4%;
+  width: 17rem;
 }
+
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainImgDiv {
+  margin-top: 4.5rem;
+}
+
+.mainImg {
+  width: 65rem;
+}
+
+.headingTxt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: #fff;
+  width: 49rem;
+  animation-fill-mode: backwards;
+}
+
+.textBox {
+  margin-top: 4.5rem;
+}
+
+.para {
+  color: #fff;
+  font-size: 1.8rem;
+  width: 52rem;
+  font-family: "Roboto", sans-serif;
+  animation: paraAnimation 300ms linear 400ms;
+  animation-fill-mode: backwards;
+}
+
 .communicationSection {
   display: flex;
   justify-content: end;
