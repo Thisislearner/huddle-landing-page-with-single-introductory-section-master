@@ -2,26 +2,7 @@
 /* font-family: 'Roboto', sans-serif;   ===>poppies 400, 600 for heading & body*/
 @import url("./abstract/_mixin.scss");
 @import url("./abstract/_variables.scss");
-@import url("./animation/_animation.scss");
-* {
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-image: url("../images/bg-desktop.svg"), linear-gradient(#674baf, #6f54b6);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 97.6vh;
-  padding: 5rem;
-  box-sizing: border-box;
-}
+@import url("./base/_animation.scss");
 
 .logo {
   margin-left: 4%;
@@ -47,6 +28,7 @@ body {
   font-size: 4.5rem;
   color: #fff;
   width: 49rem;
+  // animation: @include paraMovementAnimation(-8rem, -4rem) 300ms linear 100ms;
   animation-fill-mode: backwards;
 }
 
@@ -77,10 +59,11 @@ body {
     opacity: 1;
   }
 }
+
 .register {
   width: 14rem;
   font-size: 2rem;
-  color: #674baf;
+  color: hsl(257, 40%, 49%);
   font-family: "Roboto", cursive;
   padding: 1rem 2rem;
   border-radius: 5rem;
@@ -101,7 +84,7 @@ body {
 .register:active {
   box-shadow: 0 3px 3px #0004;
   transform: translateY(1px);
-  color: #412880;
+  color: hsl(257, 52%, 33%);
 }
 
 .register::after {
@@ -138,11 +121,11 @@ body {
     opacity: 1;
   }
 }
+
 .communicationSection {
   display: flex;
   justify-content: end;
 }
-
 a {
   margin: 0 1rem;
 }
@@ -160,5 +143,3 @@ footer {
   bottom: 2rem;
   left: 2rem;
 }
-
-/*# sourceMappingURL=style.css.map */

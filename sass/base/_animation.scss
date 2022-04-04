@@ -1,0 +1,16 @@
+@mixin paraAnimation($first, $second) {
+  @keyframes headingTxtAnimation {
+    0% {
+      transform: translateX($first);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX($second);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
